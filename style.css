@@ -1,0 +1,99 @@
+/*GENEREAL*/
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    color:white;
+}
+
+.h3{
+    color: red;
+}
+
+header{
+    padding: 0.5rem 2rem;
+
+}
+
+/*HERO*/
+.carousel.item{
+    align-items: center;
+}
+
+/*SPAZIO IMMAGINE*/
+#cosocaruccio{
+    height: 500px;
+    background-image: url(../immagini/cosocaruccio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/*FOOTER*/
+#mainFooter {
+    color:black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.footerWrapper {
+   text-align: right;
+}
+.footerSocial {
+    text-align: left;
+    font-size: 2rem;
+}
+.footerLegal {
+    text-align: right;
+    margin-right: ;
+}
+.footerSection {
+    width: 33.33%;
+
+}
+
+/*SCHERMO MOBILE*/
+
+.is-mobile-open .navbar-nav ul  {
+    /*faccio riapparire il menu*/
+    display: block;
+}
+
+.is-mobile-open nav.navbar-nav {
+    /*metto il NAV con il menu sopra tutti gli altri elementi */
+    position: fixed;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height:100vh;
+
+    background: #2a40b9;
+
+    /*per centrare l'elmento UL uso display flex sul genitore nav */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-mobile-open .navbar-nav li {
+    padding:0.5rem;
+}
+
+.is-mobile-open .navbar-nav a {
+    font-size: 2rem;
+}
+
+#menuIcon.open i.icon-menu:before{ 
+    /* quando l'elemento menuIcon prende la classe .open (dopo il click)
+    vado a sostituire il CONTENUTO dell'icona di fontello .icon-menu. 
+
+    In pratica, anziché farla corrispondere all'iconcina hamburger, imposto
+    il suo CONTENT come quello dell'icona .icon-cancel
+    */
+
+    content: '\e804';
+
+}
