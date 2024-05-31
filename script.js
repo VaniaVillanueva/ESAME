@@ -29,9 +29,9 @@ function creaCardFilm(film) {
    
     let card = document.createElement("div");
     if (film.disponibilità){
-        card.setAttribute("class", "card col-4 p-3 mt-5");
+        card.setAttribute("class", "card col-lg-4 p-3 mt-5");
     }else{
-        card.setAttribute("class", "card col-2 p-3 mt-5");  
+        card.setAttribute("class", "card col-lg-2 p-3 mt-5");  
     }
     
     let img = document.createElement("img");

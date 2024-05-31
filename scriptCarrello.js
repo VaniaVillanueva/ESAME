@@ -23,7 +23,7 @@ function recuperaFilmLS() {
                 grandTotal.innerHTML = "Totale: € " + totale;
                 
                 let btn = document.createElement("button");
-                btn.setAttribute("class", "btn btn-primary mt-5");
+                btn.setAttribute("class", "btn btn-primary mt-5 mb-5");
                 btn.textContent = "cancella";
                 
                 btn.addEventListener("click", function(){
